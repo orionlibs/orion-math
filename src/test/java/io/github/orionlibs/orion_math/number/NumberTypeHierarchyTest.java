@@ -3,6 +3,9 @@ package io.github.orionlibs.orion_math.number;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import io.github.orionlibs.orion_math.ATest;
+import io.github.orionlibs.orion_math.number.complex.Complex;
+import io.github.orionlibs.orion_math.number.type.NumberType;
+import io.github.orionlibs.orion_math.number.type.NumberTypeHierarchy;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;

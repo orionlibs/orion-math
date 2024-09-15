@@ -1,4 +1,4 @@
-package io.github.orionlibs.orion_math.number;
+package io.github.orionlibs.orion_math.number.type;
 
 import java.util.Collections;
 import java.util.HashMap;

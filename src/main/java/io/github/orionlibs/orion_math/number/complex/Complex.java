@@ -1,4 +1,4 @@
-package io.github.orionlibs.orion_math.number;
+package io.github.orionlibs.orion_math.number.complex;
 
 import io.github.orionlibs.orion_math.CloningService;
 

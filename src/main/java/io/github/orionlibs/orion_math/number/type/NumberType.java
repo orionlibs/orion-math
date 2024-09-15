@@ -1,4 +1,4 @@
-package io.github.orionlibs.orion_math.number;
+package io.github.orionlibs.orion_math.number.type;
 
 import io.github.orionlibs.orion_math.OrionEnumeration;
 
