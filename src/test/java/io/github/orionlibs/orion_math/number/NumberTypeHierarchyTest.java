@@ -14,11 +14,11 @@ public class NumberTypeHierarchyTest extends ATest
     @Test
     void test_get()
     {
-        NumberType type = NumberTypeHierarchy.getNumberTypeAfterArithmeticalOperation(1, 1);
+        NumberType type = NumberTypeHierarchy.getHighestRankingNumberType(1, 1);
         assertEquals(NumberType.NaturalNumber, type);
-        type = NumberTypeHierarchy.getNumberTypeAfterArithmeticalOperation(1, 1.0f);
+        type = NumberTypeHierarchy.getHighestRankingNumberType(1, 1.0f);
         assertEquals(NumberType.RealNumber, type);
-        type = NumberTypeHierarchy.getNumberTypeAfterArithmeticalOperation(Complex.of(), 1L);
+        type = NumberTypeHierarchy.getHighestRankingNumberType(Complex.of(), 1L);
         assertEquals(NumberType.ComplexNumber, type);
     }
 }

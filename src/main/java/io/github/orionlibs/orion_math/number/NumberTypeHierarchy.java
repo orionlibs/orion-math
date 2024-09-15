@@ -37,7 +37,7 @@ public class NumberTypeHierarchy
     }
 
 
-    public static NumberType getNumberTypeAfterArithmeticalOperation(Number x, Number y)
+    public static NumberType getHighestRankingNumberType(Number x, Number y)
     {
         int rankingOfNumberOfTypeOfX = getRankingOfNumberType(NumberTypes.get(x));
         int rankingOfNumberOfTypeOfY = getRankingOfNumberType(NumberTypes.get(y));

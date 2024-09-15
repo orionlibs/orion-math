@@ -3,48 +3,50 @@ package io.github.orionlibs.orion_math.number;
 import io.github.orionlibs.orion_math.CloningService;
 
 /**
- * mutable Complex number class. Use ImmutableComplex if you need immutability
+ * immmutable Complex number class. Use Complex if you need mutability
  */
-public class Complex extends AComplex implements Comparable<Number>
+public class ImmutableComplex extends AComplex implements Comparable<Number>
 {
-    public static final Complex ZERO = Complex.of();
-    private double realValue = 0.0d;
-    private double imaginaryValue = 0.0d;
+    public static final ImmutableComplex ZERO = ImmutableComplex.of();
+    private final double realValue;
+    private final double imaginaryValue;
 
 
-    public Complex()
+    public ImmutableComplex()
     {
+        this.realValue = 0.0d;
+        this.imaginaryValue = 0.0d;
     }
 
 
-    public Complex(double realValue)
+    public ImmutableComplex(double realValue)
     {
         this.realValue = realValue;
+        this.imaginaryValue = 0.0d;
     }
 
 
-    public Complex(double realValue, double imaginaryValue)
+    public ImmutableComplex(double realValue, double imaginaryValue)
     {
         this(realValue);
-        this.imaginaryValue = imaginaryValue;
     }
 
 
-    public static Complex of()
+    public static ImmutableComplex of()
     {
-        return new Complex();
+        return new ImmutableComplex();
     }
 
 
-    public static Complex of(double realValue)
+    public static ImmutableComplex of(double realValue)
     {
-        return new Complex(realValue);
+        return new ImmutableComplex(realValue);
     }
 
 
-    public static Complex of(double realValue, double imaginaryValue)
+    public static ImmutableComplex of(double realValue, double imaginaryValue)
     {
-        return new Complex(realValue, imaginaryValue);
+        return new ImmutableComplex(realValue, imaginaryValue);
     }
 
 
@@ -83,12 +85,6 @@ public class Complex extends AComplex implements Comparable<Number>
     }
 
 
-    public void setRealValue(double realValue)
-    {
-        this.realValue = realValue;
-    }
-
-
     @Override
     public double getImaginaryValue()
     {
@@ -96,16 +92,10 @@ public class Complex extends AComplex implements Comparable<Number>
     }
 
 
-    public void setImaginaryValue(double imaginaryValue)
-    {
-        this.imaginaryValue = imaginaryValue;
-    }
-
-
     @Override
     public boolean equals(Object other)
     {
-        if(other instanceof Complex temp)
+        if(other instanceof ImmutableComplex temp)
         {
             return this.realValue == temp.getRealValue()
                             && this.imaginaryValue == temp.getImaginaryValue();
@@ -147,9 +137,9 @@ public class Complex extends AComplex implements Comparable<Number>
 
 
     @Override
-    public Complex clone()
+    public ImmutableComplex clone()
     {
-        return (Complex)CloningService.clone(this);
+        return (ImmutableComplex)CloningService.clone(this);
     }
 
 
