@@ -1,6 +1,6 @@
 package io.github.orionlibs.orion_math.number.type;
 
-import io.github.orionlibs.orion_math.OrionEnumeration;
+import io.github.orionlibs.orion_math.utils.OrionEnumeration;
 
 public enum NumberType implements OrionEnumeration
 {

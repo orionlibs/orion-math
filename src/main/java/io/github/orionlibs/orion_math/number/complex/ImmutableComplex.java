@@ -1,6 +1,6 @@
 package io.github.orionlibs.orion_math.number.complex;
 
-import io.github.orionlibs.orion_math.CloningService;
+import io.github.orionlibs.orion_math.utils.CloningService;
 
 /**
  * immmutable Complex number class. Use Complex if you need mutability

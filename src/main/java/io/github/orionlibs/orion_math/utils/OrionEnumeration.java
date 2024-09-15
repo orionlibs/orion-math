@@ -1,4 +1,4 @@
-package io.github.orionlibs.orion_math;
+package io.github.orionlibs.orion_math.utils;
 
 public interface OrionEnumeration
 {
